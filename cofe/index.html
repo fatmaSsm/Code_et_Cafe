@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <img src="img/logo2.png" alt="logo" title="Code et café" id="logo">
+
+        <ul class="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Get in Touch</a></li>
+        </ul>
+
+        <div class="buttons">
+            <button id="search-btn" href="#menu">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+            <button id="menu-btn">
+                <i class="fa-solid fa-beer-mug-empty"></i>
+            </button>
+        </div>
+
+        <div class="search-form">
+            <input type="text" class="search-input" id="search-box" placeholder="Coffee Break...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="cart-items-container">
+            <h3>Your List</h3>
+            <ul id="cart-items"></ul>
+
+            <div class="cart-total">
+                Total: $<span id="cart-total">0.00</span>
+            </div>
+
+            <button class="btn-buy">Buy Now</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO/HOME SECTION - VIDEO BACKGROUND -->
+        <section class="hero" id="home">
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="videos/main.mp4" type="video/mp4">
+            </video>
+
+            <div class="overlay"></div>
+
+            <div class="section-content">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>Code et Café</h1>
+                        <hr>
+                        <p>Coffee Meets Code</p>
+                        <a href="#menu" class="hero-btn">
+                            Explore Menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- MENU SECTION -->
+    <section id="menu">
+        <h2>Our <span>Menu</span></h2>
+        <hr>
+        <div class="box-container">
+
+            <div class="card">
+                <img src="img/espresso.png" alt="Espresso" class="box-img">
+                <h3>Espresso</h3>
+                <p>$3.00</p>
+                <button onclick="addToCart('Espresso', 3)">Add</button>
+            </div>
+
+            <div class="card">
+                <img src="img/americano.png" alt="Americano" class="box-img">
+                <h3>Americano</h3>
+                <p>$3.50</p>
+                <button onclick="addToCart('Americano', 3.5)">Add</button>
+            </div>
+
+            <div class="card">
+                <img src="img/TurkishCoffee.png" alt="Turkish Coffee" class="box-img">
+                <h3>Turkish Coffee</h3>
+                <p>$4.00</p>
+                <button onclick="addToCart('TurkishCoffee', 4.00)">Add</button>
+            </div>
+
+            <div class="card">
+                <img src="img/latte.png" alt="Latte" class="box-img">
+                <h3>Latte</h3>
+                <p>
+                    <span class="price">$4.50</span>
+                    <span class="old-price">$5.00</span>
+                </p>
+                <button onclick="addToCart('Latte', 4.5)">Add</button>
+            </div>
+
+            <div class="card">
+                <img src="img/cappuccino.png" alt="Cappuccino" class="box-img">
+                <h3>Cappuccino</h3>
+                <p>$4.25</p>
+                <button onclick="addToCart('Cappuccino', 4.25)">Add</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About <span>Code et Café</span></h2>
+                <hr>
+                <p>
+                    Code et Café is more than just a coffee shop.
+                    It is a space where creativity meets caffeine, and ideas turn into code.
+                </p>
+                <p>
+                    We believe that great coffee fuels great thinking.
+                    From carefully selected coffee beans to a calm and inspiring atmosphere,
+                    every detail is designed for developers, designers, and coffee lovers.
+                </p>
+                <p>
+                    Whether you are writing your first line of code or debugging your next big project,
+                    Code et Café is your place to focus, create, and connect.
+                </p>
+            </div>
+
+            <div class="about-image">
+                <div class="image-wrapper">
+                    <img src="img/about.png" alt="Coffee and Code">
+                    <div class="glass-layer">
+                        <img src="img/logo2.png" alt="Code et Café Logo" class="glass-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <div class="contact-container">
+
+            <div class="contact-info">
+                <h2>Get in <span>Touch</span></h2>
+                <hr>
+                <p>
+                    Have a question, a project idea, or just want to grab a coffee?
+                    We'd love to hear from you.
+                </p>
+
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        Istanbul, Türkiye
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        mail@codeetcafe.com
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        +90 123 456 789
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contact-form">
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="☕ Your Name" required>
+                    <input type="email" id="email" placeholder="☕ Your Email" required>
+                    <textarea id="message" placeholder="☕ Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-search">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+        <div class="footer-container">
+
+            <!-- Logo & About -->
+            <div class="footer-about">
+                <img src="img/logo2.png" alt="Code et Café Logo">
+                <p>
+                    Code et Café is a creative space where great coffee meets great ideas.
+                    Brew, code, and connect.
+                </p>
+            </div>
+
+            <!-- Links -->
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Get in Touch</a></li>
+                </ul>
+            </div>
+
+            <!-- Social -->
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-linkedin"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Code et Café. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="js.js"></script>
+</body>
+
+</html>
