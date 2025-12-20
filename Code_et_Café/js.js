@@ -16,7 +16,7 @@ const navMenu = document.querySelector(".navLinks");
 
 menuBtn.addEventListener("click", (e) => {
   e.stopPropagation();
-  navMenu.classList.toggle("active");
+  navMenu.classList.toggle("active"); 
 });
 
 window.addEventListener("scroll", () => {
@@ -286,4 +286,5 @@ window.addEventListener('scroll', () => {
     setTimeout(() => {
       document.body.classList.remove("no-scroll");
     }, 2500); 
+
   });
