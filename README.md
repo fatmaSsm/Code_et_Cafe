@@ -25,9 +25,11 @@
 - Accessible and semantic HTML structure
 
 ---
-
-For this website => https://bsmweb.lovestoblog.com/
+<p align="center">
+  <a href="https://bsmweb.lovestoblog.com/" target="_blank" rel="noopener noreferrer">
+    ☕ Code et Café ☕
+  </a>
+</p>
 
 ---
 
-fatmaSsm
