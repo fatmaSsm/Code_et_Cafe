@@ -25,11 +25,15 @@
 - Accessible and semantic HTML structure
 
 ---
-<p align="center">
-  <a href="https://bsmweb.lovestoblog.com/" target="_blank" rel="noopener noreferrer">
+
+## Website
+
+ - <a href="https://bsmweb.lovestoblog.com/" target="_blank" rel="noopener noreferrer">
      Code et Café 🤎
   </a>
-</p>
-
+  
 ---
+
+## Author
+- fatmaSsm
 
