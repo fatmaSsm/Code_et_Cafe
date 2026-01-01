@@ -27,7 +27,7 @@
 ---
 <p align="center">
   <a href="https://bsmweb.lovestoblog.com/" target="_blank" rel="noopener noreferrer">
-    ☕ Code et Café ☕
+     Code et Café 🤎
   </a>
 </p>
 
