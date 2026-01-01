@@ -6,12 +6,12 @@
 
 ---
 
-## About
+## 🍪 About
 **Cafe et Code** is a simple web page project that demonstrates modern web development practices using HTML, CSS, and JavaScript. This project features animations, a responsive layout, and interactive elements to create an engaging user experience.
 
 ---
 
-## Features
+## 🚀 Features
 
 - Clean and modern UI design
 - Responsive layout (mobile-friendly)
@@ -26,7 +26,7 @@
 
 ---
 
-## Website
+## ☕ Website
 
  - <a href="https://bsmweb.lovestoblog.com/" target="_blank" rel="noopener noreferrer">
      Code et Café 🤎
@@ -34,6 +34,6 @@
   
 ---
 
-## Author
+## 👩‍💻 Author
 - fatmaSsm
 
