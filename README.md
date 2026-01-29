@@ -1,7 +1,7 @@
 # Code et Café  ||  _a website project_
 
 <p align="center">
-  <img src="Code_et_Café/Assets/image.png" alt="Cafe et Code Preview" height="450px" width="800"/>
+  <img src="Code_et_Café/Assets/image.png" alt="Cafe et Code Preview" height="450px" width="800"/> 
 </p>
 
 ---
