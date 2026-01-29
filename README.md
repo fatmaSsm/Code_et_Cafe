@@ -28,7 +28,7 @@
 
 ## ☕ Website
 
- - <a href="https://bsmweb.lovestoblog.com/" target="_blank" rel="noopener noreferrer">
+ - <a href="https://fatmassm.github.io/Code_et_Cafe/" target="_blank" rel="noopener noreferrer">
      Code et Café 🤎
   </a>
   
