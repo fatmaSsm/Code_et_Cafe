@@ -35,5 +35,5 @@
 ---
 
 ## 👩‍💻 Author
-- fatmaSsm
+* **Fatma Susam** - [@fatmaSsm](https://github.com/fatmaSsm)
 
